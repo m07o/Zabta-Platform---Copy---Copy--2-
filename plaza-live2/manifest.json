@@ -1,0 +1,40 @@
+{
+    "name": "PLAZA - البث المباشر للمباريات",
+    "short_name": "PLAZA",
+    "description": "شاهد أهم المباريات مباشرة وبجودة عالية",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#00f2ff",
+    "background_color": "#0a0a12",
+    "lang": "ar",
+    "dir": "rtl",
+    "categories": ["sports", "entertainment"],
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [],
+    "shortcuts": [
+        {
+            "name": "المباريات المباشرة",
+            "short_name": "مباشر",
+            "description": "شاهد المباريات المباشرة الآن",
+            "url": "./index.html#live",
+            "icons": [{ "src": "logo.png", "sizes": "96x96" }]
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false
+}

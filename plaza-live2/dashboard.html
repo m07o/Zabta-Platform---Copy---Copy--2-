@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - Plaza Live</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        // حماية لوحة التحكم
+        (function () {
+            const session = localStorage.getItem('plaza_session');
+            if (!session) {
+                window.location.href = 'index.html';
+                return;
+            }
+            try {
+                const user = JSON.parse(session);
+                if (user.role !== 'admin') {
+                    window.location.href = 'index.html';
+                }
+            } catch (e) {
+                localStorage.removeItem('plaza_session');
+                window.location.href = 'index.html';
+            }
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="database.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="ads.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="scraper.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="ui-components.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <main class="admin-container">
+        <!-- Sidebar -->
+        <div class="admin-sidebar">
+            <div class="sidebar-header">
+                <h2>Plaza Live</h2>
+                <p>لوحة التحكم</p>
+            </div>
+            <div class="sidebar-menu">
+                <div class="admin-menu-item active" onclick="switchAdminTab('matches')">
+                    <i class="fa-solid fa-futbol"></i> إدارة المباريات
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('users')">
+                    <i class="fa-solid fa-users"></i> إدارة المستخدمين
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('content')">
+                    <i class="fa-solid fa-file-alt"></i> إدارة المحتوى
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('ads')">
+                    <i class="fa-solid fa-ad"></i> إدارة الإعلانات
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('stats')">
+                    <i class="fa-solid fa-chart-line"></i> الإحصائيات
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('social')">
+                    <i class="fa-solid fa-share-alt"></i> التواصل الاجتماعي
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('settings')">
+                    <i class="fa-solid fa-cogs"></i> الإعدادات
+                </div>
+                <div class="admin-menu-item" onclick="switchAdminTab('scraper')">
+                    <i class="fa-solid fa-robot"></i> الاستخراج التلقائي
+                </div>
+                <div class="admin-menu-item logout" onclick="logout()">
+                    <i class="fa-solid fa-sign-out-alt"></i> تسجيل الخروج
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-content">
+            <section id="admin-panel">
+
+                <!-- Matches Tab -->
+                <div id="tab-matches" class="admin-tab-content">
+                    <div class="admin-header">
+                        <h2>إدارة المباريات</h2>
+                        <button onclick="showAddMatchForm()" class="btn-primary"><i class="fa-solid fa-plus"></i> إضافة
+                            مباراة جديدة</button>
+                    </div>
+
+                    <!-- Add Match Form -->
+                    <div id="addMatchForm" class="content-box" style="display: none;">
+                        <h3>إضافة مباراة جديدة</h3>
+                        <input type="hidden" id="editMatchId" value="">
+                        <form onsubmit="event.preventDefault(); addNewMatch();">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>الفريق الأول</label>
+                                    <div class="team-selector-group">
+                                        <select id="team1Type" class="form-control" onchange="updateRegions('team1')">
+                                            <option value="">نوع الفريق</option>
+                                            <option value="clubs">نادي</option>
+                                            <option value="national">منتخب</option>
+                                        </select>
+                                        <select id="team1Region" class="form-control" disabled
+                                            onchange="updateLeagues('team1')">
+                                            <option value="">المنطقة/القارة</option>
+                                        </select>
+                                        <select id="team1League" class="form-control" disabled
+                                            onchange="updateTeams('team1')">
+                                            <option value="">الدوري/البطولة</option>
+                                        </select>
+                                        <select id="team1Name" class="form-control" disabled
+                                            onchange="updateTeamLogo('team1')">
+                                            <option value="">اختر الفريق</option>
+                                        </select>
+                                    </div>
+                                    <div id="team1LogoPreview" class="team-logo-preview"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>الفريق الثاني</label>
+                                    <div class="team-selector-group">
+                                        <select id="team2Type" class="form-control" onchange="updateRegions('team2')">
+                                            <option value="">نوع الفريق</option>
+                                            <option value="clubs">نادي</option>
+                                            <option value="national">منتخب</option>
+                                        </select>
+                                        <select id="team2Region" class="form-control" disabled
+                                            onchange="updateLeagues('team2')">
+                                            <option value="">المنطقة/القارة</option>
+                                        </select>
+                                        <select id="team2League" class="form-control" disabled
+                                            onchange="updateTeams('team2')">
+                                            <option value="">الدوري/البطولة</option>
+                                        </select>
+                                        <select id="team2Name" class="form-control" disabled
+                                            onchange="updateTeamLogo('team2')">
+                                            <option value="">اختر الفريق</option>
+                                        </select>
+                                    </div>
+                                    <div id="team2LogoPreview" class="team-logo-preview"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>البطولة</label>
+                                    <select id="matchTournament" class="form-control" required>
+                                        <option value="">اختر البطولة...</option>
+                                        <!-- سيتم تحميل البطولات من teams_data.json -->
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>وقت المباراة</label>
+                                    <input type="time" id="matchTime" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>تاريخ المباراة</label>
+                                    <input type="date" id="matchDate" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>حالة المباراة</label>
+                                <select id="matchStatus" class="form-control">
+                                    <option value="upcoming">قادمة</option>
+                                    <option value="live">مباشرة</option>
+                                    <option value="ended">انتهت</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>روابط البث (السيرفرات)</label>
+                                <div id="streamSourcesContainer">
+                                    <!-- Stream sources will be added here dynamically -->
+                                </div>
+                                <button type="button" onclick="addSourceField()" class="btn-secondary"
+                                    style="margin-top: 10px;">
+                                    <i class="fa-solid fa-plus"></i> إضافة سيرفر آخر
+                                </button>
+                            </div>
+
+                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">إضافة
+                                المباراة</button>
+                        </form>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>قائمة المباريات</h3>
+                        <div id="adminMatchesList" class="matches-grid">
+                            <!-- Matches will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users Tab -->
+                <div id="tab-users" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>إدارة المستخدمين</h2>
+                    </div>
+                    <div class="content-box">
+                        <h3>إضافة مستخدم جديد</h3>
+                        <form onsubmit="event.preventDefault(); addNewUser();">\n
+                            <div class="form-group">
+                                <input type="text" id="newUsername" class="form-control" placeholder="اسم المستخدم"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="newPassword" class="form-control" placeholder="كلمة المرور"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <select id="newUserRole" class="form-control">
+                                    <option value="user">مستخدم عادي</option>
+                                    <option value="admin">مسؤول (Admin)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">إضافة
+                                مستخدم</button>
+                        </form>
+                    </div>
+                    <div class="content-box">
+                        <h3>قائمة المستخدمين</h3>
+                        <div id="usersList"></div>
+                    </div>
+                </div>
+
+                <!-- Content Tab -->
+                <div id="tab-content" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>إدارة المحتوى</h2>
+                    </div>
+                    <div class="content-box">
+                        <h3>تعديل الصفحات</h3>
+                        <div class="form-group">
+                            <label>اختر الصفحة</label>
+                            <select id="pageSelect" class="form-control" onchange="loadPageContent()">
+                                <option value="about">من نحن</option>
+                                <option value="contact">اتصل بنا</option>
+                                <option value="privacy">سياسة الخصوصية</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>المحتوى</label>
+                            <textarea id="pageContentEditor" class="form-control" style="height: 300px;"></textarea>
+                        </div>
+                        <button onclick="savePageContent()" class="btn-primary">حفظ التغييرات</button>
+                    </div>
+                </div>
+
+                <!-- Ads Tab -->
+                <div id="tab-ads" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>إدارة الإعلانات</h2>
+                    </div>
+                    <div class="content-box">
+                        <h3>إعدادات الإعلانات</h3>
+                        <div class="form-group">
+                            <label>تفعيل الإعلانات</label>
+                            <input type="checkbox" id="adsEnabledToggle" checked>
+                        </div>
+                        <div class="form-group">
+                            <label>فترة التدوير (بالمللي ثانية)</label>
+                            <input type="number" id="adsRotationInterval" class="form-control" value="30000">
+                        </div>
+                        <div class="form-group">
+                            <label>كود إعلان الهيدر (Header)</label>
+                            <textarea id="headerAd" class="form-control" style="height: 100px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>كود إعلان الشريط الجانبي (Sidebar)</label>
+                            <textarea id="sidebarAd" class="form-control" style="height: 100px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>كود إعلان داخل المحتوى (In-Content)</label>
+                            <textarea id="inContentAd" class="form-control" style="height: 100px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>كود إعلان الفوتر (Footer)</label>
+                            <textarea id="footerAd" class="form-control" style="height: 100px;"></textarea>
+                        </div>
+                        <button onclick="saveAdSettings()" class="btn-primary"
+                            style="margin-top: 20px; width: 100%;">حفظ الإعدادات</button>
+                    </div>
+                </div>
+
+                <!-- Stats Tab -->
+                <div id="tab-stats" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>الإحصائيات</h2>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>المشاهدات اليوم</h3>
+                            <div class="value" id="dailyViews">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>المستخدمين النشطين</h3>
+                            <div class="value" id="activeUsers">0</div>
+                        </div>
+                        <div class="stat-card">
+                            <h3>إجمالي المباريات</h3>
+                            <div class="value" id="totalMatches">0</div>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <canvas id="viewsChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Social Tab -->
+                <div id="tab-social" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>التواصل الاجتماعي</h2>
+                    </div>
+                    <div class="content-box">
+                        <div class="form-row" style="align-items: center; margin-bottom: 20px;">
+                            <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                                <label class="switch">
+                                    <input type="checkbox" id="socialEnabledToggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>تفعيل أيقونات التواصل في الفوتر</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fa-brands fa-youtube"></i> YouTube</label>
+                            <input type="text" id="youtubeLink" class="form-control"
+                                placeholder="https://youtube.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-brands fa-facebook"></i> Facebook</label>
+                            <input type="text" id="facebookLink" class="form-control"
+                                placeholder="https://facebook.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-brands fa-twitter"></i> Twitter (X)</label>
+                            <input type="text" id="twitterLink" class="form-control"
+                                placeholder="https://twitter.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-brands fa-instagram"></i> Instagram</label>
+                            <input type="text" id="instagramLink" class="form-control"
+                                placeholder="https://instagram.com/...">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-brands fa-telegram"></i> Telegram</label>
+                            <input type="text" id="telegramLink" class="form-control" placeholder="https://t.me/...">
+                        </div>
+
+                        <button onclick="saveSocialSettings()" class="btn-primary"
+                            style="margin-top: 20px; width: 100%;">حفظ الروابط</button>
+                    </div>
+                </div>
+
+                <!-- Settings Tab -->
+                <div id="tab-settings" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>الإعدادات العامة</h2>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>تغيير كلمة المرور</h3>
+                        <div class="form-group">
+                            <input type="password" id="currentPassword" class="form-control"
+                                placeholder="كلمة المرور الحالية">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="newAdminPassword" class="form-control"
+                                placeholder="كلمة المرور الجديدة">
+                        </div>
+                        <button onclick="changeAdminPassword()" class="btn-primary" style="margin-top: 10px;">تحديث كلمة
+                            المرور</button>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>النسخ الاحتياطي والاستعادة</h3>
+                        <div class="form-row">
+                            <button onclick="backupData()" class="btn-secondary"><i class="fa-solid fa-download"></i>
+                                تحميل نسخة احتياطية</button>
+                            <button onclick="document.getElementById('restoreFile').click()" class="btn-secondary"><i
+                                    class="fa-solid fa-upload"></i> استعادة نسخة</button>
+                            <input type="file" id="restoreFile" style="display: none;" onchange="restoreData(this)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auto Scraper Tab -->
+                <div id="tab-scraper" class="admin-tab-content" style="display: none;">
+                    <div class="admin-header">
+                        <h2>الاستخراج التلقائي للمباريات</h2>
+                    </div>
+
+                    <div class="scraper-stats">
+                        <div class="scraper-stat-card">
+                            <h4>حالة النظام</h4>
+                            <div class="value" id="scraperStatus">متوقف</div>
+                        </div>
+                        <div class="scraper-stat-card">
+                            <h4>المصادر النشطة</h4>
+                            <div class="value" id="activeSourcesCount">0</div>
+                        </div>
+                        <div class="scraper-stat-card">
+                            <h4>آخر تحديث</h4>
+                            <div class="value" id="lastScrapeTime">-</div>
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>التحكم في النظام</h3>
+                        <div class="form-row" style="align-items: center;">
+                            <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                                <label class="switch">
+                                    <input type="checkbox" id="scraperEnabledToggle"
+                                        onchange="toggleScraperScheduler()">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span>تفعيل الجدولة التلقائية</span>
+                            </div>
+                            <div class="form-group">
+                                <label>التكرار (دقائق)</label>
+                                <select id="scraperInterval" class="form-control" onchange="saveScraperSettings()">
+                                    <option value="15">كل 15 دقيقة</option>
+                                    <option value="30">كل 30 دقيقة</option>
+                                    <option value="60">كل ساعة</option>
+                                </select>
+                            </div>
+                            <button onclick="runScraperNow()" class="btn-primary"><i class="fa-solid fa-play"></i> تشغيل
+                                الآن</button>
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <h3>المصادر (مواقع الاستخراج)</h3>
+                            <button onclick="addScraperSource()" class="btn-secondary"><i class="fa-solid fa-plus"></i>
+                                إضافة مصدر</button>
+                        </div>
+                        <div id="scraperSourcesList">
+                            <!-- Sources will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="content-box">
+                        <h3>سجل العمليات (Logs)</h3>
+                        <div id="scraperLogs" class="scraper-console">
+                            <!-- Logs will appear here -->
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

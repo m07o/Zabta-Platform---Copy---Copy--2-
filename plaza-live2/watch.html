@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاهدة المباراة - PLAZA</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script defer src="database.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="ads.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="scraper.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="ui-components.js"></script>
+    <script defer src="advanced-ui.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-futbol"></i> PLAZA</h1>
+            </div>
+            <div class="nav-container">
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fa-solid fa-home"></i> الرئيسية</a>
+                    <a href="about.html"><i class="fa-solid fa-info-circle"></i> من نحن</a>
+                    <a href="privacy.html"><i class="fa-solid fa-shield-alt"></i> سياسة الخصوصية</a>
+                    <a href="contact.html"><i class="fa-solid fa-envelope"></i> اتصل بنا</a>
+                    <a href="#" class="admin-link"><i class="fa-solid fa-sign-in-alt"></i> دخول</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container watch-main">
+        <!-- Header Ad -->
+        <div id="header-ad" class="ad-container-wrapper"></div>
+
+        <div class="match-details-header">
+            <div class="team-info">
+                <div class="team-logo-wrapper" id="team1Logo"></div>
+                <h2 id="team1Name">الفريق الأول</h2>
+            </div>
+
+            <div class="match-center-info">
+                <div id="matchTournament" class="match-tournament">البطولة</div>
+                <div id="matchTime" class="match-time">00:00</div>
+                <div id="viewerCount" class="match-viewer-count">
+                    <i class="fa-solid fa-eye"></i> <span id="countValue">0</span> مشاهد
+                </div>
+            </div>
+
+            <div class="team-info">
+                <h2 id="team2Name">الفريق الثاني</h2>
+                <div class="team-logo-wrapper" id="team2Logo"></div>
+            </div>
+        </div>
+
+        <div class="servers-list" id="serversList">
+            <!-- Servers will be loaded here -->
+        </div>
+
+        <div class="video-container">
+            <iframe id="videoPlayer" src="" allowfullscreen sandbox="allow-scripts allow-same-origin allow-presentation"></iframe>
+        </div>
+
+        <div class="player-controls">
+            <select id="qualitySelect" class="quality-select">
+                <option value="auto">Auto</option>
+                <option value="1080">1080p</option>
+                <option value="720">720p</option>
+                <option value="480">480p</option>
+            </select>
+            <button class="control-btn" id="pipBtn" title="نافذة عائمة"><i class="fa-solid fa-clone"></i></button>
+            <button class="control-btn" id="fullscreenBtn" title="ملء الشاشة"><i
+                    class="fa-solid fa-expand"></i></button>
+            <button class="control-btn" onclick="refreshStream()" title="تحديث البث"><i
+                    class="fa-solid fa-rotate-right"></i></button>
+        </div>
+
+        <!-- Content Ad -->
+        <div id="incontent-ad" class="ad-container-wrapper"></div>
+
+        <div class="content-wrapper watch-content">
+            <h1 id="matchTitle" style="margin-bottom: 1rem;">عنوان المباراة</h1>
+            <p>شاهد المباراة بجودة عالية وبدون تقطيع. اختر الخادم المناسب لسرعة الانترنت لديك.</p>
+        </div>
+    </main>
+
+    <!-- إعلان الفوتر -->
+    <div id="footer-ad" class="container ad-container-wrapper"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>PLAZA</h2>
+                    <p>منصتك الأولى لمشاهدة المباريات</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="social-links" id="footerSocialLinks"></div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PLAZA. جميع الحقوق محفوظة ❤️</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

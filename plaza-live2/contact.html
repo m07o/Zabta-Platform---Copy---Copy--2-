@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - PLAZA</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts: Cairo + Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="database.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="ads.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="scraper.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="ui-components.js"></script>
+    <script defer src="advanced-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fa-solid fa-futbol"></i> PLAZA</h1>
+            </div>
+            <div class="nav-container">
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html"><i class="fa-solid fa-home"></i> الرئيسية</a>
+                    <a href="about.html"><i class="fa-solid fa-info-circle"></i> من نحن</a>
+                    <a href="privacy.html"><i class="fa-solid fa-shield-alt"></i> سياسة الخصوصية</a>
+                    <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> اتصل بنا</a>
+                    <a href="#" class="admin-link"><i class="fa-solid fa-sign-in-alt"></i> دخول</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- إعلان الهيدر -->
+    <div id="header-ad" class="container ad-container-wrapper"></div>
+
+    <main class="container">
+        <div class="content-wrapper page-content-card">
+            <h2>اتصل بنا</h2>
+            <div id="contactContent">
+                <!-- Content will be loaded from database -->
+            </div>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="contactName">الاسم</label>
+                    <input type="text" id="contactName" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">البريد الإلكتروني</label>
+                    <input type="email" id="contactEmail" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">الرسالة</label>
+                    <textarea id="contactMessage" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="contact-submit-btn">إرسال</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- إعلان الفوتر -->
+    <div id="footer-ad" class="container ad-container-wrapper"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>PLAZA</h2>
+                    <p>منصتك الأولى لمشاهدة المباريات</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="social-links" id="footerSocialLinks">
+                    <!-- Social links will be loaded here -->
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PLAZA. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

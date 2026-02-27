@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- 🔍 SEO Meta Tags -->
+    <title>PLAZA - البث المباشر للمباريات الرياضية | مشاهدة مباريات اليوم</title>
+    <meta name="description" content="شاهد أهم المباريات مباشرة وبجودة عالية على PLAZA - أفضل منصة بث مباشر للمباريات الرياضية. الدوري الإنجليزي، الإسباني، المصري والسعودي.">
+    <meta name="keywords" content="مباريات مباشرة, بث مباشر, كورة لايف, يلا شوت, مشاهدة مباريات اليوم, PLAZA, الدوري الإنجليزي, الدوري الإسباني, الدوري المصري">
+    <meta name="author" content="PLAZA">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://plaza.com/">
+    
+    <!-- 📱 PWA Meta Tags -->
+    <meta name="theme-color" content="#00f2ff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PLAZA">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="PLAZA">
+    <meta name="msapplication-TileColor" content="#0a0a12">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- 🔗 Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plaza.com/">
+    <meta property="og:title" content="PLAZA - البث المباشر للمباريات الرياضية">
+    <meta property="og:description" content="شاهد أهم المباريات مباشرة وبجودة عالية - الدوريات الأوروبية والعربية">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:locale" content="ar_AR">
+    <meta property="og:site_name" content="PLAZA">
+
+    <!-- 🐦 Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://plaza.com/">
+    <meta name="twitter:title" content="PLAZA - البث المباشر للمباريات الرياضية">
+    <meta name="twitter:description" content="شاهد أهم المباريات مباشرة وبجودة عالية">
+    <meta name="twitter:image" content="logo.png">
+
+    <!-- 📊 Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "PLAZA",
+        "alternateName": "بلازا",
+        "url": "https://plaza.com/",
+        "description": "منصة البث المباشر للمباريات الرياضية",
+        "inLanguage": "ar",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://plaza.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- 🖼️ Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
+    <link rel="mask-icon" href="logo.png" color="#00f2ff">
+
+    <!-- ⚡ Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://www.thesportsdb.com">
+    
+    <!-- 🎨 Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- 🎭 Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 📜 Scripts -->
+    <script defer src="database.js"></script>
+    <script defer src="auth.js"></script>
+    <script defer src="ads.js"></script>
+    <script defer src="modal.js"></script>
+    <script defer src="scraper.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="ui-components.js"></script>
+    <script defer src="advanced-ui.js"></script>
+    <script defer src="script.js"></script>
+    
+    <!-- 🔧 Clear Cache & Reset Data -->
+    <script>
+        // مسح جميع الـ cache القديم
+        if ('caches' in window) {
+            caches.keys().then(names => {
+                names.forEach(name => {
+                    // مسح كل الـ caches القديمة
+                    if (name.includes('plaza-cache-v1') || 
+                        name.includes('plaza-cache-v2') || 
+                        name.includes('plaza-cache-v3') ||
+                        name.includes('plaza-cache-v4') ||
+                        name.includes('plaza-dynamic')) {
+                        caches.delete(name);
+                    }
+                });
+            });
+        }
+        
+        // مسح بيانات المستخدمين القديمة وإعادة ضبط النظام
+        if (!localStorage.getItem('plaza_v5_reset')) {
+            const data = JSON.parse(localStorage.getItem('plazaDB') || '{}');
+            if (data.users) {
+                delete data.users;
+                localStorage.setItem('plazaDB', JSON.stringify(data));
+            }
+            // مسح محاولات الدخول
+            localStorage.removeItem('plaza_login_attempts');
+            // مسح الـ reset القديمة
+            localStorage.removeItem('plaza_v3_reset');
+            localStorage.removeItem('plaza_v4_reset');
+            localStorage.setItem('plaza_v5_reset', 'done');
+        }
+    </script>
+    
+    <!-- 🔧 Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // Unregister old service workers first
+                navigator.serviceWorker.getRegistrations().then(registrations => {
+                    registrations.forEach(reg => reg.unregister());
+                });
+                
+                // Register new one
+                setTimeout(() => {
+                    navigator.serviceWorker.register('./sw.js')
+                        .then(reg => console.log('✅ SW registered'))
+                        .catch(err => console.log('❌ SW failed'));
+                }, 1000);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="PLAZA Logo" class="logo-img animated-logo rounded-logo">
+                <h1>PLAZA <i class="fa-solid fa-futbol ball-icon"></i></h1>
+            </div>
+            <div class="nav-container">
+                <!-- Search Box -->
+                <div class="search-box" id="searchBox">
+                    <input type="text" id="searchInput" placeholder="ابحث عن مباراة..." autocomplete="off">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" data-mobile-menu aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+                <nav class="main-nav" id="mainNav">
+                    <a href="index.html" class="active"><i class="fa-solid fa-home"></i> الرئيسية</a>
+                    <a href="about.html"><i class="fa-solid fa-info-circle"></i> من نحن</a>
+                    <a href="privacy.html"><i class="fa-solid fa-shield-alt"></i> سياسة الخصوصية</a>
+                    <a href="contact.html"><i class="fa-solid fa-envelope"></i> اتصل بنا</a>
+                    <a href="#" class="admin-link"><i class="fa-solid fa-sign-in-alt"></i> دخول</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- إعلان الهيدر -->
+    <div id="header-ad" class="container ad-container-wrapper"></div>
+
+    <main class="container">
+        <section class="hero-section">
+            <!-- Viewer Count Badge -->
+            <div class="viewer-badge" id="viewerBadge" style="display: none;">
+                <span class="live-dot"></span>
+                <span id="viewerCount">0</span> مشاهد مباشر
+            </div>
+            
+            <div class="hero-content">
+                <h2>عيش أجواء المباريات <span class="highlight">مباشرة</span></h2>
+                <p>أفضل جودة بث لمشاهدة المباريات أونلاين بدون تقطيع</p>
+                <a href="#liveMatches" class="cta-button">شاهد الآن <i class="fa-solid fa-play"></i></a>
+            </div>
+        </section>
+
+        <section class="matches-section">
+            <div class="section-header">
+                <h3><i class="fa-solid fa-circle-play live-icon"></i> المباريات المباشرة</h3>
+                <div class="live-indicator"></div>
+            </div>
+            <div id="liveMatches" class="matches-grid">
+                <!-- المباريات المباشرة -->
+            </div>
+
+            <!-- إعلان بين المباريات -->
+            <div id="incontent-ad" class="container ad-container-wrapper"></div>
+
+            <div class="section-header">
+                <h3><i class="fa-solid fa-calendar-days"></i> المباريات القادمة</h3>
+            </div>
+            <div id="upcomingMatches" class="matches-grid">
+                <!-- المباريات القادمة -->
+            </div>
+        </section>
+    </main>
+
+    <!-- إعلان الفوتر -->
+    <div id="footer-ad" class="container ad-container-wrapper"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h2>PLAZA</h2>
+                    <p>منصتك الأولى لمشاهدة المباريات</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                <div class="social-links" id="footerSocialLinks">
+                    <!-- Social links will be loaded here -->
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PLAZA. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1017 @@
+{
+    "tournaments": [
+        "الدوري الإنجليزي الممتاز",
+        "الدوري الإسباني",
+        "الدوري الإيطالي",
+        "الدوري الألماني",
+        "الدوري الفرنسي",
+        "دوري أبطال أوروبا",
+        "الدوري الأوروبي",
+        "دوري المؤتمر الأوروبي",
+        "كأس الاتحاد الإنجليزي",
+        "كأس ملك إسبانيا",
+        "كأس إيطاليا",
+        "كأس ألمانيا",
+        "كأس فرنسا",
+        "كأس السوبر الأوروبي",
+        "كأس السوبر الإنجليزي",
+        "كأس السوبر الإسباني",
+        "الدوري المصري",
+        "الدوري السعودي للمحترفين",
+        "الدوري الإماراتي",
+        "الدوري القطري",
+        "دوري أبطال أفريقيا",
+        "كأس الكونفيدرالية الأفريقية",
+        "كأس السوبر الأفريقي",
+        "دوري أبطال آسيا",
+        "كأس ملك السعودية",
+        "كأس مصر",
+        "كأس العالم",
+        "كأس الأمم الأفريقية",
+        "كأس أمم أوروبا",
+        "كوبا أمريكا",
+        "كأس آسيا",
+        "دوري الأمم الأوروبية",
+        "تصفيات كأس العالم - أوروبا",
+        "تصفيات كأس العالم - أفريقيا",
+        "تصفيات كأس العالم - آسيا",
+        "تصفيات كأس العالم - أمريكا الجنوبية",
+        "كأس العالم للأندية",
+        "الودية الدولية"
+    ],
+    "clubs": {
+        "Europe": {
+            "Premier League": [
+                {
+                    "name": "Arsenal",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg"
+                },
+                {
+                    "name": "Aston Villa",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9a/Aston_Villa_FC_crest_%282016%29.svg"
+                },
+                {
+                    "name": "Bournemouth",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282013%29.svg"
+                },
+                {
+                    "name": "Brentford",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2a/Brentford_FC_crest.svg"
+                },
+                {
+                    "name": "Brighton",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/fd/Brighton_%26_Hove_Albion_logo.svg"
+                },
+                {
+                    "name": "Chelsea",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                },
+                {
+                    "name": "Crystal Palace",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a2/Crystal_Palace_FC_logo_%282022%29.svg"
+                },
+                {
+                    "name": "Everton",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7c/Everton_FC_logo.svg"
+                },
+                {
+                    "name": "Fulham",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg"
+                },
+                {
+                    "name": "Ipswich Town",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/43/Ipswich_Town.svg"
+                },
+                {
+                    "name": "Leicester City",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2d/Leicester_City_crest.svg"
+                },
+                {
+                    "name": "Liverpool",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0c/Liverpool_FC.svg"
+                },
+                {
+                    "name": "Manchester City",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg"
+                },
+                {
+                    "name": "Manchester United",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                },
+                {
+                    "name": "Newcastle United",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Newcastle_United_Logo.svg"
+                },
+                {
+                    "name": "Nottingham Forest",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg"
+                },
+                {
+                    "name": "Southampton",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c9/FC_Southampton.svg"
+                },
+                {
+                    "name": "Tottenham Hotspur",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg"
+                },
+                {
+                    "name": "West Ham United",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg"
+                },
+                {
+                    "name": "Wolverhampton",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg"
+                }
+            ],
+            "La Liga": [
+                {
+                    "name": "Athletic Bilbao",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/98/Club_Athletic_Bilbao_logo.svg"
+                },
+                {
+                    "name": "Atletico Madrid",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg"
+                },
+                {
+                    "name": "Barcelona",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+                },
+                {
+                    "name": "Celta Vigo",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/RC_Celta_de_Vigo_logo.svg"
+                },
+                {
+                    "name": "Getafe",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7e/Getafe_logo.svg"
+                },
+                {
+                    "name": "Girona",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8a/Girona_FC_Logo.svg"
+                },
+                {
+                    "name": "Las Palmas",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5e/UD_Las_Palmas_logo.svg"
+                },
+                {
+                    "name": "Leganes",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c6/CD_Legan%C3%A9s_logo.svg"
+                },
+                {
+                    "name": "Mallorca",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e0/RCD_Mallorca.svg"
+                },
+                {
+                    "name": "Osasuna",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/db/CA_Osasuna_logo.svg"
+                },
+                {
+                    "name": "Rayo Vallecano",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/Rayo_Vallecano_logo.svg"
+                },
+                {
+                    "name": "Real Betis",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/13/Real_betis_logo.svg"
+                },
+                {
+                    "name": "Real Madrid",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+                },
+                {
+                    "name": "Real Sociedad",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Real_Sociedad_logo.svg"
+                },
+                {
+                    "name": "Real Valladolid",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/6e/Real_Valladolid_Logo.svg"
+                },
+                {
+                    "name": "Sevilla",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/3b/Sevilla_FC_logo.svg"
+                },
+                {
+                    "name": "Valencia",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/Valenciacf.svg"
+                },
+                {
+                    "name": "Villarreal",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/70/Villarreal_CF_logo.svg"
+                },
+                {
+                    "name": "Alaves",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f8/Deportivo_Alav%C3%A9s_logo_%282020%29.svg"
+                },
+                {
+                    "name": "Espanyol",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d5/RCD_Espanyol_logo.svg"
+                }
+            ],
+            "Serie A": [
+                {
+                    "name": "AC Milan",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Logo_of_AC_Milan.svg"
+                },
+                {
+                    "name": "Atalanta",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/66/AtalantaBC.svg"
+                },
+                {
+                    "name": "Bologna",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bologna_F.C._1909_logo.svg"
+                },
+                {
+                    "name": "Cagliari",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/61/Cagliari_Calcio_1920.svg"
+                },
+                {
+                    "name": "Como",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f4/Como_1907_logo.svg"
+                },
+                {
+                    "name": "Empoli",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Empoli_FC.svg"
+                },
+                {
+                    "name": "Fiorentina",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8a/ACF_Fiorentina.svg"
+                },
+                {
+                    "name": "Genoa",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2c/Genoa_CFC_crest.svg"
+                },
+                {
+                    "name": "Hellas Verona",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/92/Hellas_Verona_FC_logo_%282020%29.svg"
+                },
+                {
+                    "name": "Inter Milan",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/05/FC_Internazionale_Milano_2021.svg"
+                },
+                {
+                    "name": "Juventus",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Juventus_FC_-_pictogram.svg"
+                },
+                {
+                    "name": "Lazio",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/S.S._Lazio_badge.svg"
+                },
+                {
+                    "name": "Lecce",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/27/US_Lecce_logo.svg"
+                },
+                {
+                    "name": "Monza",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/31/AC_Monza_logo_%282019%29.svg"
+                },
+                {
+                    "name": "Napoli",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2d/SSC_Napoli.svg"
+                },
+                {
+                    "name": "Parma",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/49/Parma_Calcio_1913_logo.svg"
+                },
+                {
+                    "name": "Roma",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f7/AS_Roma_logo_%282017%29.svg"
+                },
+                {
+                    "name": "Torino",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/Torino_FC_Logo.svg"
+                },
+                {
+                    "name": "Udinese",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/Udinese_Calcio_logo.svg"
+                },
+                {
+                    "name": "Venezia",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/1e/Venezia_FC_Logo_2022.svg"
+                }
+            ],
+            "Bundesliga": [
+                {
+                    "name": "Augsburg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c5/FC_Augsburg_logo.svg"
+                },
+                {
+                    "name": "Bayer Leverkusen",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/59/Bayer_04_Leverkusen_logo.svg"
+                },
+                {
+                    "name": "Bayern Munich",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg"
+                },
+                {
+                    "name": "Bochum",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/7/72/VfL_Bochum_logo.svg"
+                },
+                {
+                    "name": "Borussia Dortmund",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/67/Borussia_Dortmund_logo.svg"
+                },
+                {
+                    "name": "Borussia Monchengladbach",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Borussia_M%C3%B6nchengladbach_logo.svg"
+                },
+                {
+                    "name": "Eintracht Frankfurt",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/Eintracht_Frankfurt_Logo.svg"
+                },
+                {
+                    "name": "Freiburg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/6d/SC_Freiburg_logo.svg"
+                },
+                {
+                    "name": "Heidenheim",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/1._FC_Heidenheim_1846.svg"
+                },
+                {
+                    "name": "Hoffenheim",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Logo_TSG_Hoffenheim.svg"
+                },
+                {
+                    "name": "Holstein Kiel",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Holstein_Kiel_logo.svg"
+                },
+                {
+                    "name": "Mainz 05",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Logo_Mainz_05.svg"
+                },
+                {
+                    "name": "RB Leipzig",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/04/RB_Leipzig_2014_logo.svg"
+                },
+                {
+                    "name": "St. Pauli",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8c/FC_St._Pauli_logo.svg"
+                },
+                {
+                    "name": "Stuttgart",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/e/eb/VfB_Stuttgart_1893_Logo.svg"
+                },
+                {
+                    "name": "Union Berlin",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/1._FC_Union_Berlin_Logo.svg"
+                },
+                {
+                    "name": "Werder Bremen",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/be/SV-Werder-Bremen-Logo.svg"
+                },
+                {
+                    "name": "Wolfsburg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/ce/VfL_Wolfsburg_Logo.svg"
+                }
+            ],
+            "Ligue 1": [
+                {
+                    "name": "Angers",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/Angers_SCO_logo.svg"
+                },
+                {
+                    "name": "Auxerre",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5c/AJ_Auxerre_logo.svg"
+                },
+                {
+                    "name": "Brest",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5e/Stade_Brestois_29_logo.svg"
+                },
+                {
+                    "name": "Le Havre",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Le_Havre_AC_logo.svg"
+                },
+                {
+                    "name": "Lens",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/65/RC_Lens_logo.svg"
+                },
+                {
+                    "name": "Lille",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/3f/Lille_OSC_2018_logo.svg"
+                },
+                {
+                    "name": "Lyon",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a6/Olympique_Lyonnais.svg"
+                },
+                {
+                    "name": "Marseille",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Olympique_Marseille_logo.svg"
+                },
+                {
+                    "name": "Monaco",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/ba/AS_Monaco_FC.svg"
+                },
+                {
+                    "name": "Montpellier",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a8/Montpellier_HSC_logo.svg"
+                },
+                {
+                    "name": "Nantes",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/4f/FC_Nantes_2019_logo.svg"
+                },
+                {
+                    "name": "Nice",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/2e/OGC_Nice_logo.svg"
+                },
+                {
+                    "name": "Paris Saint-Germain",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a7/Paris_Saint-Germain_F.C..svg"
+                },
+                {
+                    "name": "Reims",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/19/Stade_de_Reims_Logo.svg"
+                },
+                {
+                    "name": "Rennes",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Stade_Rennais_FC.svg"
+                },
+                {
+                    "name": "Saint-Etienne",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Logo_AS_Saint-%C3%89tienne.svg"
+                },
+                {
+                    "name": "Strasbourg",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/80/Racing_Club_de_Strasbourg_logo.svg"
+                },
+                {
+                    "name": "Toulouse",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/63/Toulouse_FC_2018_logo.svg"
+                }
+            ]
+        },
+        "Africa": {
+            "Egyptian League": [
+                {
+                    "name": "Al Ahly",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8c/Al_Ahly_SC_logo.svg"
+                },
+                {
+                    "name": "Zamalek",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/04/ZamalekSC.png"
+                },
+                {
+                    "name": "Pyramids",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/00/Pyramids_FC_logo.png"
+                },
+                {
+                    "name": "Al Masry",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/92/Al-Masry_SC_logo.png"
+                },
+                {
+                    "name": "Future FC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/81/Future_FC_logo.png"
+                },
+                {
+                    "name": "Ceramica Cleopatra",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Ceramica_Cleopatra_FC_logo.png"
+                },
+                {
+                    "name": "El Gouna",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e2/El_Gouna_FC_logo.png"
+                },
+                {
+                    "name": "Smouha",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/27/Smouha_SC_logo.png"
+                },
+                {
+                    "name": "ENPPI",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5b/ENPPI_SC_logo.png"
+                },
+                {
+                    "name": "Ismaily",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e1/Ismaily_SC_logo.png"
+                },
+                {
+                    "name": "Al Ittihad Alexandria",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f0/Al_Ittihad_Alexandria_logo.png"
+                },
+                {
+                    "name": "Pharco",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Pharco_FC_logo.png"
+                },
+                {
+                    "name": "Ghazl El Mahalla",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/c4/Ghazl_El_Mahalla_logo.png"
+                },
+                {
+                    "name": "Zakazik",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/76/Zakazik_logo.png"
+                },
+                {
+                    "name": "Baladeyet El Mahalla",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/be/Baladeyet_El_Mahalla_logo.png"
+                },
+                {
+                    "name": "Al Mokawloon",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/1c/Arab_Contractors_SC_logo.png"
+                },
+                {
+                    "name": "National Bank",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/49/National_Bank_of_Egypt_SC_logo.png"
+                },
+                {
+                    "name": "Haras El Hodood",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Haras_El_Hodood_SC_logo.png"
+                }
+            ],
+            "CAF Champions League": [
+                {
+                    "name": "Wydad AC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/30/Wydad_Casablanca_Logo.svg"
+                },
+                {
+                    "name": "Esperance Tunis",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/96/Esp%C3%A9rance_Sportive_de_Tunis.svg"
+                },
+                {
+                    "name": "Mamelodi Sundowns",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Mamelodi_Sundowns_FC.svg"
+                },
+                {
+                    "name": "Al Hilal Omdurman",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/0/04/Al-Hilal_Omdurman.png"
+                },
+                {
+                    "name": "Raja Casablanca",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/7e/Raja_CA_logo.svg"
+                },
+                {
+                    "name": "TP Mazembe",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/bf/TP_Mazembe_logo.svg"
+                },
+                {
+                    "name": "Simba SC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/50/Simba_S.C._logo.png"
+                },
+                {
+                    "name": "Petro de Luanda",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/35/Petro_de_Luanda_logo.png"
+                },
+                {
+                    "name": "Young Africans",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/ba/Young_Africans_SC_logo.png"
+                },
+                {
+                    "name": "Kaizer Chiefs",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b6/Kaizer_Chiefs_logo.svg"
+                },
+                {
+                    "name": "Al Merrikh",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Al-Merrikh_SC_logo.png"
+                },
+                {
+                    "name": "Orlando Pirates",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/da/Orlando_Pirates_logo.svg"
+                }
+            ]
+        },
+        "Asia": {
+            "Saudi Pro League": [
+                {
+                    "name": "Al Hilal",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/fa/Al_Hilal_SFC_Logo.svg"
+                },
+                {
+                    "name": "Al Nassr",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/86/Al_Nassr_FC_Logo.svg"
+                },
+                {
+                    "name": "Al Ittihad",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e1/Al-Ittihad_Club_Logo.svg"
+                },
+                {
+                    "name": "Al Ahli SFC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/30/Al-Ahli_Saudi_FC_logo.svg"
+                },
+                {
+                    "name": "Al Shabab",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/Al_Shabab_FC_logo.svg"
+                },
+                {
+                    "name": "Al Ettifaq",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f0/Ettifaq_FC_logo.svg"
+                },
+                {
+                    "name": "Al Fateh",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/1/14/Al_Fateh_SC_logo.svg"
+                },
+                {
+                    "name": "Al Khaleej",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a0/Al_Khaleej_Club_logo.svg"
+                },
+                {
+                    "name": "Al Raed",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/2/23/Al_Raed_FC_logo.svg"
+                },
+                {
+                    "name": "Al Taawoun",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/8/87/Al_Taawoun_FC_logo.svg"
+                },
+                {
+                    "name": "Al Riyadh",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/6/68/Al_Riyadh_SC_logo.svg"
+                },
+                {
+                    "name": "Damac",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/ff/Damac_FC_logo.png"
+                },
+                {
+                    "name": "Al Fayha",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/de/Al-Fayha_FC_logo.svg"
+                },
+                {
+                    "name": "Al Qadisiyah",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/9/9c/Al-Qadsiah_FC_logo.svg"
+                },
+                {
+                    "name": "Al Okhdood",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/ba/Al_Okhdood_logo.png"
+                },
+                {
+                    "name": "Al Orubah",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/57/Al_Orubah_FC_logo.png"
+                },
+                {
+                    "name": "Al Wehda",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d7/Al-Wehda_Club_logo.svg"
+                },
+                {
+                    "name": "Al Hazem",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/Al-Hazem_logo.svg"
+                }
+            ],
+            "UAE Pro League": [
+                {
+                    "name": "Al Ain",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5d/Al_Ain_FC_logo.svg"
+                },
+                {
+                    "name": "Shabab Al Ahli",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/a/a0/Shabab_Al-Ahli_Dubai_FC.svg"
+                },
+                {
+                    "name": "Al Wasl",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f5/Al-Wasl_F.C._logo.svg"
+                },
+                {
+                    "name": "Al Wahda",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/eb/Al_Wahda_FC_logo.svg"
+                },
+                {
+                    "name": "Al Jazira",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/4d/Al_Jazira_Club.svg"
+                },
+                {
+                    "name": "Baniyas",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/3e/Baniyas_SC.png"
+                },
+                {
+                    "name": "Al Nasr Dubai",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/fb/Al_Nasr_SC_%28Dubai%29_logo.svg"
+                },
+                {
+                    "name": "Sharjah FC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/4/49/Sharjah_FC_logo.svg"
+                }
+            ],
+            "Qatar Stars League": [
+                {
+                    "name": "Al Sadd",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/Al-Sadd_Sports_Club_logo.svg"
+                },
+                {
+                    "name": "Al Duhail",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/b/b6/Al-Duhail_SC_logo.svg"
+                },
+                {
+                    "name": "Al Rayyan",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f8/Al-Rayyan_SC_logo.svg"
+                },
+                {
+                    "name": "Al Arabi",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/ed/Al_Arabi_SC_logo.svg"
+                },
+                {
+                    "name": "Qatar SC",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/3/30/Qatar_SC_logo.svg"
+                },
+                {
+                    "name": "Al Gharafa",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/e/e4/Al-Gharafa_SC_logo.svg"
+                },
+                {
+                    "name": "Al Wakrah",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f1/Al_Wakrah_SC_logo.svg"
+                },
+                {
+                    "name": "Umm Salal",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/d/d1/Umm_Salal_SC_logo.svg"
+                }
+            ]
+        },
+        "South America": {
+            "Brazilian Serie A": [
+                {
+                    "name": "Flamengo",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg"
+                },
+                {
+                    "name": "Palmeiras",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/10/Palmeiras_logo.svg"
+                },
+                {
+                    "name": "Corinthians",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/7/76/Sport_Club_Corinthians_Paulista_crest.svg"
+                },
+                {
+                    "name": "Sao Paulo",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Brasao_do_Sao_Paulo_Futebol_Clube.svg"
+                },
+                {
+                    "name": "Santos",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/1/15/Santos_Logo.png"
+                },
+                {
+                    "name": "Fluminense",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/55/Fluminense_fc_logo.svg"
+                },
+                {
+                    "name": "Atletico Mineiro",
+                    "logo": "https://upload.wikimedia.org/wikipedia/en/5/5f/Atletico_Mineiro_logo.svg"
+                },
+                {
+                    "name": "Botafogo",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/34/Botafogo_de_Futebol_e_Regatas_logo.svg"
+                }
+            ],
+            "Argentine Liga": [
+                {
+                    "name": "River Plate",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Escudo_del_C_A_River_Plate.svg"
+                },
+                {
+                    "name": "Boca Juniors",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/4/41/CABJ70.png"
+                },
+                {
+                    "name": "Racing Club",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/56/Racing_Club_logo.svg"
+                },
+                {
+                    "name": "Independiente",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/64/Escudo_del_Club_Atletico_Independiente.svg"
+                },
+                {
+                    "name": "San Lorenzo",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/ba/CA_San_Lorenzo_de_Almagro.svg"
+                },
+                {
+                    "name": "Estudiantes",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/be/Estudiantes_de_La_Plata_logo.svg"
+                },
+                {
+                    "name": "Velez Sarsfield",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/2/21/V%C3%A9lez_Sarsfield_logo.svg"
+                },
+                {
+                    "name": "Lanus",
+                    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Lanus-arg.svg"
+                }
+            ]
+        }
+    },
+    "national": {
+        "Africa": [
+            {
+                "name": "Egypt",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/c9/Egyptian_Football_Association_logo.svg"
+            },
+            {
+                "name": "Morocco",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/3/31/Royal_Moroccan_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Algeria",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Algerian_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Senegal",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/9d/F%C3%A9d%C3%A9ration_S%C3%A9n%C3%A9galaise_de_Football_logo.svg"
+            },
+            {
+                "name": "Nigeria",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Nigeria_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Cameroon",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/3/37/Cameroon_national_football_team_logo.svg"
+            },
+            {
+                "name": "Ghana",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/c0/Ghana_Football_Association_logo.svg"
+            },
+            {
+                "name": "Ivory Coast",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/ca/F%C3%A9d%C3%A9ration_Ivoirienne_de_Football_logo.svg"
+            },
+            {
+                "name": "Tunisia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/F%C3%A9d%C3%A9ration_Tunisienne_de_Football_logo.svg"
+            },
+            {
+                "name": "South Africa",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/3/3a/South_African_Football_Association_logo.svg"
+            },
+            {
+                "name": "Mali",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/3/32/F%C3%A9d%C3%A9ration_Malienne_de_Football_logo.svg"
+            },
+            {
+                "name": "DR Congo",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/DR_Congo_FA.png"
+            }
+        ],
+        "Europe": [
+            {
+                "name": "France",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e3/F%C3%A9d%C3%A9ration_fran%C3%A7aise_de_football_logo.svg"
+            },
+            {
+                "name": "Germany",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e3/Deutscher_Fussball-Bund_logo_%282017%29.svg"
+            },
+            {
+                "name": "Spain",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/0/0a/Spain_National_Football_Team_badge.png"
+            },
+            {
+                "name": "England",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg"
+            },
+            {
+                "name": "Italy",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/7/73/Italy_national_football_team_crest.svg"
+            },
+            {
+                "name": "Portugal",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/3/3f/Portuguese_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Netherlands",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/0/03/Royal_Netherlands_Football_Association_logo.svg"
+            },
+            {
+                "name": "Belgium",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/b4/Royal_Belgian_FA_logo.svg"
+            },
+            {
+                "name": "Croatia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e9/HNS_logo.svg"
+            },
+            {
+                "name": "Switzerland",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/d/d9/Swiss_Football_Association_logo.svg"
+            },
+            {
+                "name": "Poland",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/6/6f/Polish_Football_Association_logo.svg"
+            },
+            {
+                "name": "Denmark",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/44/Danish_Football_Association_logo.svg"
+            },
+            {
+                "name": "Austria",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/%C3%96FB_logo.svg"
+            },
+            {
+                "name": "Turkey",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/4f/Turkey_national_football_team_crest.svg"
+            },
+            {
+                "name": "Serbia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/8/85/Football_Association_of_Serbia_logo.svg"
+            },
+            {
+                "name": "Scotland",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/1/12/Scottish_Football_Association_logo.svg"
+            }
+        ],
+        "South America": [
+            {
+                "name": "Brazil",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/1/1b/CBF_logo_%282019%29.svg"
+            },
+            {
+                "name": "Argentina",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/c1/Argentina_national_football_team_logo.svg"
+            },
+            {
+                "name": "Uruguay",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/4b/Uruguayan_Football_Association_logo.svg"
+            },
+            {
+                "name": "Colombia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/9b/Colombian_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Chile",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/9e/Football_Federation_of_Chile_logo.svg"
+            },
+            {
+                "name": "Ecuador",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e8/Ecuadorian_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Peru",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/6/60/Peruvian_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Venezuela",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/b8/Venezuelan_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Paraguay",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/5/51/Paraguayan_Football_Association_logo.svg"
+            },
+            {
+                "name": "Bolivia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e2/Bolivian_Football_Federation_logo.svg"
+            }
+        ],
+        "Asia": [
+            {
+                "name": "Saudi Arabia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/4/49/Saudi_Arabian_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Japan",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/6/6e/Japan_Football_Association_logo.svg"
+            },
+            {
+                "name": "South Korea",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/f/f4/Korea_Football_Association_logo.svg"
+            },
+            {
+                "name": "Iran",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/5/57/IR_Iran_national_football_team_crest.svg"
+            },
+            {
+                "name": "Australia",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/8/80/Football_Australia_logo.svg"
+            },
+            {
+                "name": "Qatar",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/92/Qatar_Football_Association_logo.svg"
+            },
+            {
+                "name": "United Arab Emirates",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e7/UAE_FA.svg"
+            },
+            {
+                "name": "Iraq",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/94/Iraq_Football_Association_logo.svg"
+            },
+            {
+                "name": "Uzbekistan",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/f/f7/O%27zbekiston_Futbol_Federatsiyasi_logo.svg"
+            },
+            {
+                "name": "Jordan",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/8/81/Jordan_Football_Association_logo.svg"
+            },
+            {
+                "name": "Oman",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/e/e2/Oman_Football_Association_logo.svg"
+            },
+            {
+                "name": "Palestine",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/1/1e/Palestinian_Football_Association_logo.svg"
+            }
+        ],
+        "North America": [
+            {
+                "name": "Mexico",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/c/cb/Mexican_Football_Federation_logo.svg"
+            },
+            {
+                "name": "USA",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/a/a5/United_States_Soccer_Federation_logo.svg"
+            },
+            {
+                "name": "Canada",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/bb/Canada_Soccer_logo.svg"
+            },
+            {
+                "name": "Costa Rica",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/9/9c/Costa_Rican_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Jamaica",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/6/6f/Jamaica_Football_Federation_logo.svg"
+            },
+            {
+                "name": "Honduras",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/b/b7/Honduran_Football_Federation_logo.svg"
+            }
+        ]
+    },
+    "default": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png"
+}
